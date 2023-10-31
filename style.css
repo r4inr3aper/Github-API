@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://s3-alpha-sig.figma.com/img/09a5/a8ff/d4c69d9565d565d75b230a53a57c9f0a?Expires=1699228800&Signature=QLWFo7rMjhGXcgpyg79qplYKv5zAnZGRs94~MEbrPJMr0flLT9msLn7daKdhq7NnhHbARv4nDIrWeH2PqwREEMdk8zulpijblUQl89riBlaAmoTHRQVp30jFb43S6MzyRLXekR4tI7gEMyoVek59nmWjnrcEcRo-JN1wrQjVhMxz59WUfx14j~wIpxbWRY~qNKi24V5O8SMDCQrfigjZPfXazgXy9VwqsPCVf-oZmjkBU8HiuRnaGULn75nlLihsIKEQ3~YIMoQiw1tYcqF0wbIrN3r-1tvmG09uwTDj5kPqLoAMhPUWXcIty01Kp6SDYA0Msh1jan~o9725VrjcQA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    padding: 0 55px;
+  }
+  hr {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin: auto;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header h2 {
+    color: #000;
+    text-align: center;
+    font-family: "times new roman";
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 28px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: normal;
+    letter-spacing: 1.44px;
+  }
+  .header h1 {
+    color: #000;
+    text-align: center;
+    font-family: "times new roman";
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 28px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: normal;
+    letter-spacing: 1.44px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 90vw;
+    padding-top: 7px;
+    justify-content: space-around;
+  }
+  .hero .left {
+    width: 30vw;
+  }
+  .hero .right {
+    width: 30vw;
+  }
+  form {
+    padding: 17px 0px;
+    width: 70%;
+    margin: auto;
+  }
+  form input {
+    padding: auto;
+    width: 100%;
+    margin: auto;
+    padding: 13px 13px;
+    background: transparent;
+    border: 1px bold black;
+  }
+  input::placeholder {
+    color: #000;
+    font-weight: 500;
+  }
+  .right p {
+    font-size: 24px;
+  }
+  .hero .left img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 515px){
+    .header h2{
+      display: none;
+    }
+    .header {
+      justify-content: center;
+  }
+  }
