@@ -27,6 +27,7 @@ const getUser = async (username) => {
     document.getElementById('following').innerHTML=`${data.following}`
     document.getElementById('location').innerHTML=`${data.location}`
     document.getElementById('html_url').innerHTML=`${data.html_url}`
+    document.getElementById('html_url').href=`${data.html_url}`
   }
   )
   .catch((error)=>{
