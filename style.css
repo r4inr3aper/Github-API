@@ -1,9 +1,14 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./times\ new\ roman.ttf);
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-image: url("https://s3-alpha-sig.figma.com/img/09a5/a8ff/d4c69d9565d565d75b230a53a57c9f0a?Expires=1699228800&Signature=QLWFo7rMjhGXcgpyg79qplYKv5zAnZGRs94~MEbrPJMr0flLT9msLn7daKdhq7NnhHbARv4nDIrWeH2PqwREEMdk8zulpijblUQl89riBlaAmoTHRQVp30jFb43S6MzyRLXekR4tI7gEMyoVek59nmWjnrcEcRo-JN1wrQjVhMxz59WUfx14j~wIpxbWRY~qNKi24V5O8SMDCQrfigjZPfXazgXy9VwqsPCVf-oZmjkBU8HiuRnaGULn75nlLihsIKEQ3~YIMoQiw1tYcqF0wbIrN3r-1tvmG09uwTDj5kPqLoAMhPUWXcIty01Kp6SDYA0Msh1jan~o9725VrjcQA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
     padding: 0 55px;
+    font-family: 'myFirstFont';
   }
   hr {
     width: 100%;
@@ -15,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'myFirstFont';
   }
   .header h2 {
     color: #000;
@@ -46,15 +52,17 @@ body {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    width: 90vw;
+    width: 100%;
     padding-top: 7px;
     justify-content: space-around;
+    border: 2px solid black;
   }
   .hero .left {
     width: 30vw;
   }
   .hero .right {
     width: 30vw;
+    font-size: 3.5vh;
   }
   form {
     padding: 17px 0px;
@@ -79,13 +87,29 @@ body {
   .hero .left img{
     max-width: 100%;
     height: auto;
+    width: 37vh;
   }
 
-  @media screen and (max-width: 515px){
+  @media screen and (max-width: 621px){
     .header h2{
       display: none;
     }
     .header {
       justify-content: center;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero .right {
+    width: 64vw;
+    font-size: 3vh;
+}
+  }
+  @media screen and (max-width: 380px){
+  .hero{
+    border: none;
+  }
+  .hero .left{
+    width: 64vw;
   }
   }
