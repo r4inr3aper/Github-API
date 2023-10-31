@@ -31,24 +31,3 @@ const formSubmit = () => {
   }
   return false;
 };
-
-               you to ${data.login}, a coding virtuoso known for their ${data.public_repos} repositories, drawing in ${data.followers}
-               followers and following ${data.following}.
-               Hailing from ${data.location}, they're the subject of our next profile
-               exploration. Dive into their coding journey and discover more on
-               their GitHub profile ${data.html_url}. Their bio
-               reads, "${data.bio}". Join us as we unravel the code of ${data.login}
-               and their captivating GitHub story.
-             </p>
-           </div>
-     `;
-
-           hero.innerHTML = card;
-};
-
-const formSubmit = () => {
-  if (searchBox.value !== "") {
-    getUser(searchBox.value);
-  }
-  return false;
-};
